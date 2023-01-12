@@ -11,7 +11,8 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormGroup from '@mui/material/FormGroup';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
-
+import Login from './Login';
+import Logout from './Logout';
 const MainAppBar = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -28,18 +29,9 @@ const MainAppBar = () => {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Social Media App
           </Typography>
-
-            <div>
-              <IconButton
-                size="large"
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                color="inherit"
-              >
-                <AccountCircle />
-              </IconButton>
-            </div>
+              
+              <Login />
+              <Logout />
 
         </Toolbar>
       </AppBar>
