@@ -7,11 +7,9 @@ import { GoogleOAuthProvider } from '@react-oauth/google';
 const GOOGLE_ID = "1059202553892-1uqf8lddnp1jefmetq5cirq1ba934ntc.apps.googleusercontent.com";
 function App() {
   return (
-    <GoogleOAuthProvider clientId={GOOGLE_ID}>
+    <div style={{backgroundColor: 'lightgray', height: '1000px',flex: 1}}>
     <MainAppBar />
-    <HomePage  />
-    <Posts />
-    </GoogleOAuthProvider>
+    </div>
   );
 }
 
